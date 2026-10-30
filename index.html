@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;300;400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a class="nav-name" href="#home" data-name></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#about">Home</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#interests">Interests</a>
+      <a href="#education">Education</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Contact</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <div class="menu-panel" id="menuPanel">
+    <a href="#about">Home</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#interests">Interests</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <!-- 1. Intro animation stage (like drjoyce.co) -->
+    <section class="stage" id="home" data-stage>
+      <div class="stage-wrap">
+        <div class="amp" aria-hidden="true">&amp;</div>
+        <div class="col col-left" data-col="left"></div>
+        <div class="col col-right" data-col="right"></div>
+        <div class="portrait"><div class="portrait-img" data-photo></div></div>
+        <div class="stage-foot"><p data-foot-left></p><p data-foot-right></p></div>
+        <div class="stage-end">
+          <h1 data-end></h1>
+          <a class="btn" data-end-btn></a>
+        </div>
+        <div class="scroll-hint"><span>Scroll</span><i></i></div>
+      </div>
+    </section>
+
+    <!-- 2. Home -->
+    <section class="hello" id="about">
+      <div class="hello-inner">
+        <div class="hello-text">
+          <p class="eyebrow reveal">Hello, I'm <span data-name></span></p>
+          <p class="hello-headline reveal" data-headline></p>
+          <ul class="hello-links reveal" data-home-links></ul>
+        </div>
+        <div class="hello-side reveal">
+          <div class="hello-photo">
+            <div class="hello-img" data-photo></div>
+            <a class="badge" href="#research" data-badge></a>
+          </div>
+          <p class="hello-bio" data-bio></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Research: EcoFog -->
+    <section class="research" id="research" data-research></section>
+
+    <!-- 4. Projects -->
+    <section class="section" id="projects">
+      <header class="section-head reveal">
+        <p class="eyebrow">02 / Projects</p>
+        <h2>Things I've <em>built</em></h2>
+      </header>
+      <div data-projects></div>
+    </section>
+
+    <!-- 5. Interests -->
+    <section class="section" id="interests">
+      <header class="section-head reveal">
+        <p class="eyebrow">03 / Interests</p>
+        <h2>Beyond the <em>lab</em></h2>
+      </header>
+      <div class="groups" data-interests></div>
+    </section>
+
+    <!-- 6. Education -->
+    <section class="section" id="education">
+      <header class="section-head reveal">
+        <p class="eyebrow">04 / Education</p>
+        <h2><em>Education</em></h2>
+      </header>
+      <div data-education></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="eyebrow">Say hello</p>
+      <h2 class="contact-title">Let's <em>talk</em>.</h2>
+      <a class="contact-email" data-email></a>
+      <ul class="socials" data-socials></ul>
+      <p class="fine" data-fine></p>
+    </section>
+  </main>
+
+  <!-- popups -->
+  <dialog class="modal" id="modal">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <div class="modal-body" data-modal-body></div>
+  </dialog>
+  <dialog class="lightbox" id="lightbox">
+    <button class="modal-close" data-close aria-label="Close">✕</button>
+    <figure><img alt="" data-lb-img><figcaption data-lb-cap></figcaption></figure>
+  </dialog>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
