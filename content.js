@@ -11,7 +11,7 @@
 const SITE = {
   name: "Diivij Todi",
   fullName: "Diivij Todi",
-  email: "you@example.com",             // TODO: your email
+  email: "diivij30@gmail.com",
   location: "Jaipur, India",
   photo: "images/headshot.jpg",
   badge: "ISEF 2026 Grand Award winner",
