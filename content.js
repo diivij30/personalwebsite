@@ -303,8 +303,6 @@ const SITE = {
     ibdp: {
       subjects: ["Biology HL", "Chemistry HL", "Mathematics AA HL", "Physics SL", "English", "Spanish B"],
       sessions: [
-        { name: "Grade 11 Midterms", total: "42/42", scores: [7, 7, 7, 7, 7, 7] },
-        { name: "Grade 11 Finals", total: "41/42", scores: [7, 7, 7, 7, 7, 6] },
         { name: "Grade 12 Midterms", total: "42/42", scores: [7, 7, 7, 7, 7, 7] },
       ],
     },
